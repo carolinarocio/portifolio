@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #d1ddf3;    
+}
+
+nav{
+    display: flex;
+    width: 90%; 
+    margin: auto;
+    padding: 30px 07;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 40px 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(140, 207, 219);
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: rgb(127, 146, 209);
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.imagens{
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.imagens img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.imagens:hover .forma{
+    bottom: 20px;
+}
+
+.imagens:hover .portifolio{
+    left:45%;
+}
+
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: 3s;
+}
+
+.btn-group a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: #fff;
+
+}
+
+.btn-group a:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2) {
+    color: #7d2ae8;
+    background: #fff;
+}
+
+.redes-sociais {
+position:absolute;
+bottom: 40px;
+width: 170px;
+display: flex;
+justify-content: space-between;
+}
+
+.redes-sociais a {
+    position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #7d2ae8;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #7d2ae8;
+        text-decoration: none;
+        z-index: 1;
+        overflow: hidden;
+}
+
+.redes-sociais a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #310c96;
+    z-index: -1;
+    transition: .5s;
+}
+
+.redes-sociais a:hover:before {
+    width: 100%;
+}
